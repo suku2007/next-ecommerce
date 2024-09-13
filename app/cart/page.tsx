@@ -44,7 +44,7 @@ const Cart = () => {
     };
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto block">
             <div className="p-6">
                 <h2 className="text-xl font-bold mb-4">Shopping Cart</h2>
                 
