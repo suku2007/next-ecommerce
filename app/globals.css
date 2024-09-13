@@ -23,7 +23,17 @@ body {
     flex-direction: column;
   
 }
-footer{margin-top: auto;}
+
+header+div {
+  flex-grow: 1;
+  display: grid;
+  align-items: center;
+}
+
+header+div>div {
+  width: 100%;
+  min-width: 100%;
+}
 
 @layer utilities {
   .text-balance {
@@ -43,4 +53,12 @@ footer{margin-top: auto;}
   position: absolute;
   top: -10px;
   right: -10px;
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  display: grid;
+  place-items: center;
+}
+.swiper-thumbs .swiper-slide-thumb-active img{
+  border-color: #bebeee;
 }

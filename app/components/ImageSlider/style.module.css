@@ -1,3 +1,8 @@
+.imageSlider{position: relative;}
 .slideImage{aspect-ratio: 1/1; width: 100%; height: auto; object-fit: scale-down; background-color: black;}
-.slideThumbImage{aspect-ratio: 1/1; width: 100%; height: auto; object-fit: scale-down;}
-.sliderBtns {display: flex;justify-content: space-between;align-items: center;position: relative;top: -50%;z-index: 9;/* margin-top: -50%; */font-size: 4rem;color: #e5e5e5;}
+.slideThumbImage{aspect-ratio: 1/1; width: 100%; height: auto; object-fit: scale-down; border: 2px solid transparent;}
+.sliderBtns {display: flex; justify-content: space-between; align-items: center; top: 50%; left: 0; z-index: 9; font-size: 4rem; color: #e5e5e5; position: absolute; width: 100%; transform: translateY(calc(-50% - 2rem)); padding: 1rem; pointer-events: none;}
+.sliderBtns>div{pointer-events: all; cursor: pointer;}
+.imageSlider .swiper-slide-thumb-active .slideThumbImage{
+        border-color: red;
+}

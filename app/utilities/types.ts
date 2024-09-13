@@ -23,6 +23,10 @@ export type AddToCartButtonProps = {
   className?: string;
 };
 
+export type RatingProps = {
+  rating: number;
+};
+
 export type ImageSliderProps = {
   productImages: StaticImageData[];
 };

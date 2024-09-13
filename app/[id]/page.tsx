@@ -3,6 +3,7 @@ import { products } from "../utilities/data";
 import ImageSlider from "../components/ImageSlider/ImageSlider";
 import AddToCartButton from "../components/AddToCartButton/AddToCartButton";
 import style from "./style.module.css"
+import Rating from "@/app/components/Rating/Rating";
 
 const DetailPage = ({ params }: DetailPageProps) => {
   const { id } = params;
@@ -14,14 +15,16 @@ const DetailPage = ({ params }: DetailPageProps) => {
 
   return (
     <div className="container mx-auto">
-        <div className="grid grid-cols-2 gap-8 p-6">
+        <div className={`flex gap-6 ${style.mainWrap}`}>
+          <div className="w-1/3">
             <ImageSlider productImages={product.images}/>
-            
-            <div className={style.productDetail}>
+          </div>
+            <div className={`${style.productDetail} w-2/3`}>
                 <h1>{product.name}</h1>
                 <p>Price: {product.price}</p>
-                <p>Description: {product.description}</p>
-                <p>Rating: {product.rating}</p>
+                <p className="mb-4">Description: {product.description}</p>
+                <Rating rating={product.rating}/>
+                <div className="mb-4"></div>
                 <AddToCartButton className={style.addToCartButton} product={product}/>
             </div>
         </div>

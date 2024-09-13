@@ -29,6 +29,7 @@ const ImageSlider = ({productImages}: ImageSliderProps) => {
             }}
              thumbs={{ swiper: thumbsSwiper }}
              modules={[Navigation, Thumbs]}
+             className='mb-3'
             >
                 {productImages.map((image, index)=>
                     <SwiperSlide key={index}><Image src={image} alt="" className={style.slideImage}/></SwiperSlide>

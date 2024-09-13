@@ -1,5 +1,6 @@
-.productDetail h1 {font-size: 2rem;}
-.productDetail p:nth-child(2){color:red; font-size:1.2rem;}
+.mainWrap{padding: 3rem;}
+.productDetail h1 {font-size: 2rem;font-weight: 600;}
+.productDetail p:nth-child(2){font-size: 1.3rem;font-weight: 600;margin-bottom: 1rem;}
 .productDetail p:nth-child(3){color:#686767;}
-.productDetail p:nth-child(4){color:red;}
-.productDetail button{background-color:#f9f600; padding:0.5rem; border-radius:0.5rem;}
+.productDetail p:nth-child(4){color:blue;}
+.productDetail button{background-color: #5e5ea5; padding: 0.5rem 1rem; border-radius: 4px; color: #fff; font-weight: 500;}
