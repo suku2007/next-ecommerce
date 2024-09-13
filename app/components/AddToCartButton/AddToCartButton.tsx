@@ -6,7 +6,7 @@ import { AddToCartButtonProps } from '@/app/utilities/types';
 import { useEffect } from 'react';
 import { updateCartIcon } from '@/app/utilities/common';
 
-export default ({product, className} : AddToCartButtonProps) =>{
+const AddToCartButton = ({product, className} : AddToCartButtonProps) =>{
 
     const handleAddToCart = () => {
         const storedCart = localStorage.getItem('cart');
@@ -41,3 +41,5 @@ export default ({product, className} : AddToCartButtonProps) =>{
         > <FontAwesomeIcon icon={faCartArrowDown} /> Add To Cart</button>
     );
 }
+
+export default AddToCartButton;

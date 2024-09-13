@@ -1,7 +1,6 @@
 {
   "rules": {
     "rule-name": "off",
-    "another-rule-name": "warn",
     "no-console": "off",
     "react-hooks/exhaustive-deps": "warn"
   },

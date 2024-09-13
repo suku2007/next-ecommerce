@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
 import style from './style.module.css';
-export default () =>{
+const Header = () =>{
     return(
         <header className={style.header}>
             <Link className={style.logo} href="/">
@@ -16,3 +16,5 @@ export default () =>{
         </header>
     );
 }
+
+export default Header;

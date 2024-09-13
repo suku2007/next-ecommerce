@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import style from './style.module.css';
 
-export default ({productImages}: ImageSliderProps) => {
+const ImageSlider = ({productImages}: ImageSliderProps) => {
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
     const prevRef = useRef<HTMLDivElement | null>(null);
     const nextRef = useRef<HTMLDivElement | null>(null);
@@ -58,3 +58,4 @@ export default ({productImages}: ImageSliderProps) => {
         </div>
     );
 }
+export default ImageSlider;

@@ -10,7 +10,7 @@ export default function Home() {
       <div className="container mx-auto">
         <div className={`$product-grid grid grid-cols-3 gap-8`}>
           {
-            products.map((product : Product, key)=> <ProductCard product={product}/>)
+            products.map((product : Product, index)=> <ProductCard product={product} key={index}/>)
           }
         </div>
         

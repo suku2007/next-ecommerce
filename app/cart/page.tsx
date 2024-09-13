@@ -5,7 +5,7 @@ import Image from "next/image";
 import { updateCartIcon } from "../utilities/common";
 import style from "./style.module.css"
 
-export default () => {
+const Cart = () => {
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
     const [total, setTotal] = useState<number>(0);
     
@@ -112,3 +112,5 @@ export default () => {
         </div>
     );
 }
+
+export default Cart;

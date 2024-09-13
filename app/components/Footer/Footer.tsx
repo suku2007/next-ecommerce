@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-export default ()=>{
+const Footer = ()=>{
     return(
         <footer>
             <div className={`text-center ${style.ftText}`}>
@@ -8,3 +8,4 @@ export default ()=>{
         </footer>
     );
 }
+export default Footer;

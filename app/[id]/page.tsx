@@ -4,7 +4,7 @@ import ImageSlider from "../components/ImageSlider/ImageSlider";
 import AddToCartButton from "../components/AddToCartButton/AddToCartButton";
 import style from "./style.module.css"
 
-export default ({ params }: DetailPageProps) => {
+const DetailPage = ({ params }: DetailPageProps) => {
   const { id } = params;
   const product = products.find((p) => p.id === Number(id));
   
@@ -28,3 +28,5 @@ export default ({ params }: DetailPageProps) => {
     </div>
   );
 };
+
+export default DetailPage;
