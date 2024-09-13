@@ -1,0 +1,4 @@
+.header {display: flex;justify-content:space-between;align-items:center;padding:1rem;background-color:#e8e8f7;}
+.logo{width:10rem;}
+.logoImg{width:100%;height:auto;}
+.cartIcnSvg{width:2rem;}  

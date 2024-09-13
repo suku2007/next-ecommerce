@@ -1,0 +1,5 @@
+.productDetail h1 {font-size: 2rem;}
+.productDetail p:nth-child(2){color:red; font-size:1.2rem;}
+.productDetail p:nth-child(3){color:#686767;}
+.productDetail p:nth-child(4){color:red;}
+.productDetail button{background-color:#f9f600; padding:0.5rem; border-radius:0.5rem;}

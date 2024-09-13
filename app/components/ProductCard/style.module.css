@@ -1,0 +1,2 @@
+.productGrid img:hover {transform: scale(1.1);overflow: hidden;}
+.productGrid img{transition:0.7s ease all;}

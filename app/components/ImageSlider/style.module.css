@@ -1,0 +1,3 @@
+.slideImage{aspect-ratio: 1/1; width: 100%; height: auto; object-fit: scale-down; background-color: black;}
+.slideThumbImage{aspect-ratio: 1/1; width: 100%; height: auto; object-fit: scale-down;}
+.sliderBtns {display: flex;justify-content: space-between;align-items: center;position: relative;top: -50%;z-index: 9;/* margin-top: -50%; */font-size: 4rem;color: #e5e5e5;}
